@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>星火井冈 · 井冈山红色文化数字传播专题</title>
+<meta name="description" content="巍巍五百里井冈——中国革命的摇篮。走进井冈山革命历史、重读《井冈山的斗争》、感悟二十八井冈山精神，追寻红色足迹，聆听岁月回声。">
+<meta name="theme-color" content="#1a0f10">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%239e2a2b'/%3E%3Ctext x='32' y='44' font-size='36' text-anchor='middle' fill='%23fbf7f0' font-family='KaiTi,serif' font-weight='700'%3E星%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.loli.net">
+<link rel="preconnect" href="https://gstatic.loli.net" crossorigin>
+<link href="https://fonts.loli.net/css2?family=Noto+Serif+SC:wght@600;700;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+
+<!-- ========== 导航 ========== -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a class="brand" href="#home">
+      <span class="brand-seal" aria-hidden="true">星火</span>
+      <span class="brand-text">
+        <strong>星火井冈</strong>
+        <em>红色文化数字传播</em>
+      </span>
+    </a>
+    <nav class="nav-links" id="navMenu" aria-label="站内导航">
+      <a href="#home" class="active">首页</a>
+      <a href="#intro">走进井冈山</a>
+      <a href="#text">核心文本</a>
+      <a href="#spirit">井冈山精神</a>
+      <a href="#landmarks">红色地标</a>
+      <a href="#stories">红色故事</a>
+      <a href="#videos">红色影像</a>
+      <a href="#quiz">星火问答</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ========== 首屏 ========== -->
+<section class="hero" id="home">
+  <div class="hero-bg" aria-hidden="true">
+    <svg class="mountains" viewBox="0 0 1440 460" preserveAspectRatio="xMidYMax slice">
+      <defs>
+        <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+          <stop offset="0%" stop-color="#e6cf8a" stop-opacity=".55"/>
+          <stop offset="55%" stop-color="#c9a227" stop-opacity=".22"/>
+          <stop offset="100%" stop-color="#c9a227" stop-opacity="0"/>
+        </radialGradient>
+      </defs>
+      <circle cx="1080" cy="200" r="240" fill="url(#sunGlow)"/>
+      <circle cx="1080" cy="200" r="74" fill="#d9b45b" opacity=".9"/>
+      <path d="M0,300 L110,214 L230,268 L350,182 L470,248 L600,158 L720,232 L850,148 L965,218 L1080,172 L1205,240 L1320,188 L1440,258 L1440,460 L0,460 Z" fill="#3b1e22"/>
+      <path d="M0,342 L180,262 L320,322 L480,232 L640,302 L800,242 L980,312 L1140,252 L1300,322 L1440,282 L1440,460 L0,460 Z" fill="#2a1519"/>
+      <path d="M0,460 L0,392 L200,330 L400,386 L600,336 L820,394 L1040,346 L1240,398 L1440,364 L1440,460 Z" fill="#170b0d"/>
+    </svg>
+    <div class="stars" aria-hidden="true"></div>
+  </div>
+
+  <div class="hero-inner">
+    <p class="hero-kicker reveal">井冈山红色文化 · 数字传播专题</p>
+    <div class="hero-title-wrap reveal">
+      <h1>巍巍井冈</h1>
+      <p class="hero-sub">—— 中国革命的摇篮 ——</p>
+      <span class="hero-seal" aria-hidden="true">星火</span>
+    </div>
+    <p class="hero-quote reveal">「 边界红旗子始终不倒，在全国政治上有重大的意义。 」<small>—— 毛泽东《井冈山的斗争》</small></p>
+    <div class="hero-actions reveal">
+      <a class="btn btn-gold" href="#intro">走进井冈山</a>
+      <a class="btn btn-ghost" href="#spirit">感悟井冈山精神</a>
+    </div>
+    <div class="hero-meta reveal">
+      <span>第一个农村革命根据地</span>
+      <i></i>
+      <span>井冈山精神发源地</span>
+      <i></i>
+      <span>工农武装割据的伟大实践</span>
+    </div>
+  </div>
+  <a class="hero-scroll" href="#intro" aria-label="向下滚动">
+    <span></span>
+  </a>
+</section>
+
+<!-- ========== 走进井冈山 ========== -->
+<section class="sec sec-light" id="intro">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="seal-num" aria-hidden="true">壹</span>
+      <div>
+        <p class="sec-kicker">走进井冈山</p>
+        <h2>巍巍五百里<span class="em-red">井冈</span></h2>
+        <p class="sec-desc">湘赣边界，罗霄山脉中段。一座大山，因一段两年零四个月的斗争，成为中国革命的起点。</p>
+      </div>
+    </div>
+
+    <div class="intro-grid">
+      <div class="intro-left reveal">
+        <p>井冈山，位于江西省西南部，地处湘赣两省交界的罗霄山脉中段。1927年10月，毛泽东率领秋收起义部队向井冈山进军，在这里创建了中国第一个农村革命根据地，点燃了“工农武装割据”的星星之火。</p>
+        <p>从此，“农村包围城市、武装夺取政权”的中国革命道路从这里起步。井冈山，由此被誉为“中国革命的摇篮”，无数后来者循着先辈的足迹上山寻根，汲取信仰的力量。</p>
+      </div>
+      <div class="intro-right reveal">
+        <h3 class="intro-sub-title">红军为什么能在井冈山站住脚</h3>
+        <div class="why-item">
+          <h4><i></i>地势险要</h4>
+          <p>山高林密、易守难攻，进可攻、退可守，是天然的军事屏障。</p>
+        </div>
+        <div class="why-item">
+          <h4><i></i>群众基础好</h4>
+          <p>当地经历过轰轰烈烈的大革命，党和群众组织保存较好。</p>
+        </div>
+        <div class="why-item">
+          <h4><i></i>敌人统治薄弱</h4>
+          <p>地处两省交界，反动统治力量鞭长莫及，红色政权得以生存。</p>
+        </div>
+        <div class="why-item">
+          <h4><i></i>物产可供给养</h4>
+          <p>稻田山林兼有，自给自足的农业经济，便于红军筹粮筹款。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats reveal">
+      <div class="stat"><strong>第1<small>个</small></strong><span>中国第一个农村革命根据地</span></div>
+      <div class="stat"><strong>2<small>年零4个月</small></strong><span>井冈山革命斗争时期</span></div>
+      <div class="stat"><strong>28<small>字</small></strong><span>井冈山精神的科学概括</span></div>
+      <div class="stat"><strong>1928<small>年11月</small></strong><span>《井冈山的斗争》写作时间</span></div>
+    </div>
+
+    <h3 class="sub-title reveal">革命历程 <em>1927 — 1930 · 五大里程碑</em></h3>
+    <div class="timeline timeline-5 reveal">
+      <div class="tl-item">
+        <span class="tl-dot" aria-hidden="true"></span>
+        <p class="tl-year">1927.10<small>进军</small></p>
+        <div class="tl-body"><h4>引兵井冈</h4><p>秋收起义部队到达井冈山，开始创建中国第一个农村革命根据地。</p></div>
+      </div>
+      <div class="tl-item">
+        <span class="tl-dot" aria-hidden="true"></span>
+        <p class="tl-year">1928.04<small>会师</small></p>
+        <div class="tl-body"><h4>朱毛会师</h4><p>两支革命铁流在宁冈砻市汇合，成立红四军，根据地进入全盛时期。</p></div>
+      </div>
+      <div class="tl-item">
+        <span class="tl-dot" aria-hidden="true"></span>
+        <p class="tl-year">1928.10<small>立论</small></p>
+        <div class="tl-body"><h4>红色政权论</h4><p>《中国的红色政权为什么能够存在？》诞生，回答“红旗到底打得多久”。</p></div>
+      </div>
+      <div class="tl-item">
+        <span class="tl-dot" aria-hidden="true"></span>
+        <p class="tl-year">1928.11<small>成文</small></p>
+        <div class="tl-body"><h4>井冈山的斗争</h4><p>毛泽东向中共中央写报告，系统总结工农武装割据的经验与理论。</p></div>
+      </div>
+      <div class="tl-item">
+        <span class="tl-dot" aria-hidden="true"></span>
+        <p class="tl-year">1930.01<small>燎原</small></p>
+        <div class="tl-body"><h4>星星之火</h4><p>《星星之火，可以燎原》发表，农村包围城市的革命道路初步形成。</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 核心文本 ========== -->
+<section class="sec sec-dark" id="text">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="seal-num" aria-hidden="true">贰</span>
+      <div>
+        <p class="sec-kicker">核心文本</p>
+        <h2>一座山，<span class="em-gold">一条路</span></h2>
+        <p class="sec-desc">1928年11月25日，毛泽东代表红四军前委写给中共中央的报告——两年零四个月的井冈山斗争，在这里凝成理论。</p>
+      </div>
+    </div>
+
+    <div class="text-grid">
+      <div class="book-wrap reveal">
+        <div class="book">
+          <div class="book-spine"></div>
+          <div class="book-cover">
+            <p class="book-author">毛泽东 著</p>
+            <h3 class="book-title">井冈山的斗争</h3>
+            <p class="book-note">井冈山前委对中央的报告<br>一九二八年十一月二十五日</p>
+            <p class="book-series">毛泽东选集 · 第一卷</p>
+          </div>
+        </div>
+        <p class="book-cap">《井冈山的斗争》是毛泽东以红四军前委名义写给中共中央的报告，后收入《毛泽东选集》第一卷。</p>
+      </div>
+
+      <div class="text-points reveal">
+        <div class="tp-item">
+          <h4><i></i>工农武装割据</h4>
+          <p>武装斗争、土地革命、根据地建设“三位一体”，系统回答了红旗到底打得多久、红色政权为何能够存在的关键之问。</p>
+        </div>
+        <div class="tp-item">
+          <h4><i></i>革命新道路</h4>
+          <p>论证了在四周白色政权包围中小块红色区域能够长期存在和发展，为“农村包围城市、武装夺取政权”的中国革命道路奠定理论基础。</p>
+        </div>
+        <div class="tp-item">
+          <h4><i></i>建党建军原则</h4>
+          <p>“支部建在连上”把党的组织落到基层，士兵委员会凝聚官兵一致——这是红军艰难奋战而不溃散的重要原因。</p>
+        </div>
+        <div class="tp-item">
+          <h4><i></i>群众路线与根据地建设</h4>
+          <p>打土豪、分田地，建立工农兵政权，依靠群众求胜利，让根据地成为革命力量的战略支点。</p>
+        </div>
+
+        <blockquote class="quote reveal">
+          <p>工农武装割据的思想，是共产党和割据地方的工农群众必须充分具备的一个重要的思想。</p>
+          <cite>—— 毛泽东《井冈山的斗争》（1928年11月）</cite>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 井冈山精神 ========== -->
+<section class="sec sec-dark sec-dark-center" id="spirit">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="seal-num" aria-hidden="true">叁</span>
+      <div>
+        <p class="sec-kicker">井冈山精神</p>
+        <h2>二十八个字的<span class="em-gold">红色基因</span></h2>
+        <p class="sec-desc">坚定执着追理想、实事求是闯新路、艰苦奋斗攻难关、依靠群众求胜利——跨越时空，历久弥新。</p>
+      </div>
+    </div>
+
+    <div class="spirit-band">
+      <article class="spirit-card reveal">
+        <p class="pre">坚定执着</p>
+        <p class="big">追理想</p>
+        <p>白色恐怖笼罩全国，井冈山军民始终坚信“星星之火，可以燎原”，凭理想信念撑起红旗不倒。</p>
+      </article>
+      <article class="spirit-card reveal">
+        <p class="pre">实事求是</p>
+        <p class="big">闯新路</p>
+        <p>不照搬“城市中心论”，从中国国情出发，开辟农村包围城市、武装夺取政权的革命新路。</p>
+      </article>
+      <article class="spirit-card reveal">
+        <p class="pre">艰苦奋斗</p>
+        <p class="big">攻难关</p>
+        <p>红米饭、南瓜汤，挑粮上山、自制武器，在最艰难的岁月里以艰苦奋斗渡过重重难关。</p>
+      </article>
+      <article class="spirit-card reveal">
+        <p class="pre">依靠群众</p>
+        <p class="big">求胜利</p>
+        <p>打土豪分田地，铁的纪律赢得民心，军民同心，筑成打不破的铜墙铁壁。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 红色地标 ========== -->
+<section class="sec sec-light" id="landmarks">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="seal-num" aria-hidden="true">肆</span>
+      <div>
+        <p class="sec-kicker">红色地标</p>
+        <h2>足尖上的<span class="em-red">精神坐标</span></h2>
+        <p class="sec-desc">六处革命旧址与纪念地，串起一条穿越岁月的红色足迹——每一处，都是一堂行走的党课。</p>
+      </div>
+    </div>
+
+    <div class="bg-grid lm-grid">
+      <article class="bg-card reveal">
+        <span class="bg-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m2 20 6-12 4 7 3-5 7 10z"/><path d="M16.5 5.5 18 3l1.5 2.5"/></svg>
+        </span>
+        <h3>黄洋界哨口</h3>
+        <p>1928年8月，红军以不足一个营的兵力凭险击退敌军四个团。“黄洋界上炮声隆，报道敌军宵遁”，毛泽东《西江月·井冈山》记录的正是这一战。</p>
+      </article>
+      <article class="bg-card reveal">
+        <span class="bg-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4.5 7.5v9L12 21l7.5-4.5v-9z"/><path d="M12 3v18"/><path d="M4.5 7.5 19.5 16.5M19.5 7.5 4.5 16.5"/></svg>
+        </span>
+        <h3>八角楼的灯光</h3>
+        <p>茅坪八角楼里，毛泽东在一根灯芯的青油灯下，写下《中国的红色政权为什么能够存在？》《井冈山的斗争》两篇光辉著作。</p>
+      </article>
+      <article class="bg-card reveal">
+        <span class="bg-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 9-8 9 8"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>
+        </span>
+        <h3>大井旧居</h3>
+        <p>毛泽东同志旧居坐落于此，屋前“读书石”静卧、常青树参天，见证军民共同劳作、运筹帷幄的岁月。</p>
+      </article>
+      <article class="bg-card reveal">
+        <span class="bg-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M12 8v8M8 12h8"/></svg>
+        </span>
+        <h3>小井红军医院</h3>
+        <p>1928年建成的红军第一所正规医院。木楼简榻、缺医少药，伤员们用盐水消毒、竹镊取弹，坚持斗争，谱写可歌可泣的壮歌。</p>
+      </article>
+      <article class="bg-card reveal">
+        <span class="bg-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"/><path d="M5 21V8l7-5 7 5v13"/><path d="M9 21v-4h6v4"/><path d="M9 11h.01M12 11h.01M15 11h.01M9 14h.01M12 14h.01M15 14h.01"/></svg>
+        </span>
+        <h3>井冈山革命博物馆</h3>
+        <p>全面再现两年零四个月井冈山斗争历史的专题博物馆，一件件文物无声讲述着根据地的烽火岁月。</p>
+      </article>
+      <article class="bg-card reveal">
+        <span class="bg-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20c4-8 12-8 16-16" stroke-dasharray="2 3"/><circle cx="4" cy="20" r="1.6"/><circle cx="20" cy="4" r="1.6"/></svg>
+        </span>
+        <h3>挑粮小道</h3>
+        <p>从茅坪蜿蜒通往黄洋界的山间小道，红军将士肩挑背驮运粮上山，“朱德的扁担”的故事就发生在这条路上。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 红色故事 ========== -->
+<section class="sec sec-tint" id="stories">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="seal-num" aria-hidden="true">伍</span>
+      <div>
+        <p class="sec-kicker">红色故事</p>
+        <h2>岁月深处的<span class="em-red">回声</span></h2>
+        <p class="sec-desc">三个小故事，读懂红军将士的信仰、纪律与坚守。</p>
+      </div>
+    </div>
+
+    <div class="rc-list">
+      <article class="rc-row reveal">
+        <span class="rc-num" aria-hidden="true">壹</span>
+        <div class="rc-main">
+          <h3>朱德的扁担</h3>
+          <p class="rc-tag">一副铁肩，挑起官兵一致的信任</p>
+        </div>
+        <p class="rc-desc">1928年冬，为打破敌人的经济封锁，红军展开挑粮运动。战士们心疼年过四旬的军长，把他的扁担藏了起来；朱德另找来一根，写上“朱德记”，又出现在挑粮的队伍中。山道弯弯，扁担无声，担当与平等尽在其中。</p>
+      </article>
+      <article class="rc-row reveal">
+        <span class="rc-num" aria-hidden="true">贰</span>
+        <div class="rc-main">
+          <h3>一根灯芯</h3>
+          <p class="rc-tag">如豆之火，照亮中国革命前路</p>
+        </div>
+        <p class="rc-desc">按规定，毛泽东夜间办公可以点三根灯芯，但他始终只点一根。就在八角楼如豆的灯光下，《中国的红色政权为什么能够存在？》和《井冈山的斗争》相继诞生，理论之光照亮了革命的漫漫长夜。</p>
+      </article>
+      <article class="rc-row reveal">
+        <span class="rc-num" aria-hidden="true">叁</span>
+        <div class="rc-main">
+          <h3>“不拿群众一个红薯”</h3>
+          <p class="rc-tag">铁的纪律，赢得万千民心</p>
+        </div>
+        <p class="rc-desc">1928年春，毛泽东在桂东沙田颁布“三大纪律六项注意”，从“不拿群众一个红薯”这样的小事立起铁的纪律。上门板、捆铺草、买卖公平……人民军队由此赢得万千群众的真心跟随。</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 红色影像 ========== -->
+<section class="sec sec-dark" id="videos">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="seal-num" aria-hidden="true">陆</span>
+      <div>
+        <p class="sec-kicker">红色影像</p>
+        <h2>光影中的<span class="em-gold">井冈山</span></h2>
+        <p class="sec-desc">从电影《建军大业》的经典片段，到重上井冈山的纪录影像——光影之间，重回烽火岁月。点击选集即可在线播放。</p>
+      </div>
+    </div>
+
+    <div class="video-grid reveal">
+      <div class="player-box" id="playerBox">
+        <div class="player-poster" id="playerPoster" role="button" tabindex="0" aria-label="播放：星星之火，可以燎原——《建军大业》经典片段">
+          <img src="img/cover-jiandang.jpg" alt="《建军大业》星星之火可以燎原片段封面">
+          <span class="poster-shade" aria-hidden="true"></span>
+          <span class="poster-play" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5.5v13l11-6.5z"/></svg>
+          </span>
+          <span class="poster-title">星星之火，可以燎原<br><small>《建军大业》经典片段 · 03:12</small></span>
+        </div>
+      </div>
+
+      <div class="playlist" id="playlist" aria-label="视频选集">
+        <button class="pl-item active" data-bvid="BV13541137v9" data-cover="img/cover-jiandang.jpg">
+          <span class="pl-thumb"><img src="img/cover-jiandang.jpg" alt="" loading="lazy"></span>
+          <span class="pl-text"><em>影视经典</em><strong>星星之火，可以燎原<br>《建军大业》经典片段</strong><i>03:12</i></span>
+        </button>
+        <button class="pl-item" data-bvid="BV19W411G775" data-cover="img/cover-chongshang.jpg">
+          <span class="pl-thumb"><img src="img/cover-chongshang.jpg" alt="" loading="lazy"></span>
+          <span class="pl-text"><em>纪录影像</em><strong>毛主席重上井冈山</strong><i>30:11</i></span>
+        </button>
+        <button class="pl-item" data-bvid="BV1v24y1G7zu" data-cover="img/cover-shapan.jpg">
+          <span class="pl-thumb"><img src="img/cover-shapan.jpg" alt="" loading="lazy"></span>
+          <span class="pl-text"><em>战史推演</em><strong>新城围歼战 · 沙盘推演</strong><i>16:01</i></span>
+        </button>
+        <button class="pl-item" data-bvid="BV1eT421i7Kt" data-cover="img/cover-jingshen.jpg">
+          <span class="pl-thumb"><img src="img/cover-jingshen.jpg" alt="" loading="lazy"></span>
+          <span class="pl-text"><em>精神讲堂</em><strong>弘扬伟大建党精神<br>传承不朽井冈山精神</strong><i>04:57</i></span>
+        </button>
+      </div>
+    </div>
+    <p class="video-note reveal">视频来自哔哩哔哩平台在线播放，需联网访问；版权归原平台与原作者所有。</p>
+  </div>
+</section>
+
+<!-- ========== 星火问答 ========== -->
+<section class="sec sec-light" id="quiz">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="seal-num" aria-hidden="true">柒</span>
+      <div>
+        <p class="sec-kicker">星火问答</p>
+        <h2>测一测，<span class="em-red">你有多懂井冈山</span></h2>
+        <p class="sec-desc">六道关卡，即时判分，每题附解析——答完看看你能点亮几颗星火。</p>
+      </div>
+    </div>
+
+    <div class="quiz-card reveal" id="quizCard">
+      <div class="q-top">
+        <span class="q-count" id="qCount">第 1 / 6 题</span>
+        <span class="q-dots" id="qDots" aria-hidden="true"></span>
+      </div>
+      <div class="q-body" id="qBody">
+        <h3 class="q-title" id="qTitle"></h3>
+        <div class="q-opts" id="qOpts"></div>
+        <div class="q-explain" id="qExplain" hidden>
+          <p id="qExplainText"></p>
+          <button class="btn btn-red q-next" id="qNext">下一题</button>
+        </div>
+      </div>
+      <div class="q-result" id="qResult" hidden>
+        <p class="q-score"><strong id="qScore">0</strong><small>/ 6</small></p>
+        <p class="q-level" id="qLevel"></p>
+        <p class="q-level-desc" id="qLevelDesc"></p>
+        <button class="btn btn-red" id="qRestart">重新挑战</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 结语 ========== -->
+<section class="closing" id="legacy">
+  <div class="wrap">
+    <span class="hero-seal closing-seal reveal" aria-hidden="true">星火</span>
+    <h2 class="closing-title reveal">星星之火 · 可以燎原</h2>
+    <p class="closing-sub reveal">跨越九十余年，井冈山精神依然照亮新征程。</p>
+    <div class="flag-row reveal">
+      <div class="flag-chip"><strong>坚定执着追理想</strong></div>
+      <div class="flag-chip"><strong>实事求是闯新路</strong></div>
+      <div class="flag-chip"><strong>艰苦奋斗攻难关</strong></div>
+      <div class="flag-chip"><strong>依靠群众求胜利</strong></div>
+    </div>
+    <button class="btn btn-gold spark-btn reveal" id="sparkBtn">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l2.9 6.3 6.9.8-5.1 4.7 1.4 6.8-6.1-3.4-6.1 3.4 1.4-6.8L2.2 9.1l6.9-.8z"/></svg>
+      点亮星火
+    </button>
+    <p class="closing-meta reveal">红色基因 · 代代相传</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p>星火井冈 · 井冈山红色文化数字传播专题 ｜ 仅用于学习交流 © 2026</p>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="回到顶部">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m18 15-6-6-6 6"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+</body>
+</html>
