@@ -272,4 +272,105 @@
       }
     });
   }
+
+  /* ===== 云游井冈山：场景切换 / 自动巡游 / 鼠标视差 ===== */
+  var tourStage = document.getElementById("tourStage");
+  if (tourStage) {
+    var scenes = Array.prototype.slice.call(tourStage.querySelectorAll(".tour-scene"));
+    var stops = Array.prototype.slice.call(document.querySelectorAll(".tour-stop"));
+    var tBadge = document.getElementById("tourBadge");
+    var tInfo = document.getElementById("tourInfo");
+    var tAuto = document.getElementById("tourAuto");
+    var tIdx = 0, tTimer = null, tAutoOn = false;
+    var AUTO_MS = 8000;
+    var ICON_PAUSE = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="5" width="4" height="14" rx="1"/><rect x="14" y="5" width="4" height="14" rx="1"/></svg>';
+    var ICON_PLAY = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>';
+
+    function renderInfo(d) {
+      tBadge.textContent = "云游 · 第" + d.num + "站";
+      tInfo.innerHTML =
+        '<p class="ti-kicker">' + d.kicker + "</p>" +
+        '<h3 class="ti-name">' + d.name + "<em>" + d.sub + "</em></h3>" +
+        '<p class="ti-line">「 ' + d.line + " 」" +
+          (d.by ? "<small>" + d.by + "</small>" : "") + "</p>" +
+        '<p class="ti-desc">' + d.desc + "</p>" +
+        (d.credit ? '<p class="ti-credit">' + d.credit + "</p>" : "");
+      tInfo.classList.remove("swap");
+      void tInfo.offsetWidth; /* 重置入场动画 */
+      tInfo.classList.add("swap");
+    }
+
+    function show(i, manual) {
+      tIdx = (i + scenes.length) % scenes.length;
+      scenes.forEach(function (s, j) { s.classList.toggle("active", j === tIdx); });
+      stops.forEach(function (b, j) { b.classList.toggle("active", j === tIdx); });
+      renderInfo(scenes[tIdx].dataset);
+      if (manual) setAuto(false);
+    }
+
+    function stopTimer() {
+      if (tTimer) { clearInterval(tTimer); tTimer = null; }
+    }
+    function setAuto(on) {
+      tAutoOn = on;
+      stopTimer();
+      tAuto.innerHTML = on
+        ? ICON_PAUSE + "<span>自动云游中</span>"
+        : ICON_PLAY + "<span>已暂停</span>";
+      tAuto.setAttribute("aria-pressed", on ? "true" : "false");
+      tAuto.title = on ? "暂停自动云游" : "开启自动云游";
+      if (on) {
+        tTimer = setInterval(function () {
+          /* 不在视口内时暂停推进 */
+          var r = tourStage.getBoundingClientRect();
+          if (r.bottom < 60 || r.top > window.innerHeight - 60) return;
+          show(tIdx + 1, false);
+        }, AUTO_MS);
+      }
+    }
+
+    stops.forEach(function (b, j) {
+      b.addEventListener("click", function () {
+        if (j !== tIdx) show(j, true);
+      });
+    });
+    document.getElementById("tourPrev").addEventListener("click", function () { show(tIdx - 1, true); });
+    document.getElementById("tourNext").addEventListener("click", function () { show(tIdx + 1, true); });
+    tAuto.addEventListener("click", function () { setAuto(!tAutoOn); });
+    tourStage.addEventListener("keydown", function (e) {
+      if (e.key === "ArrowLeft") { e.preventDefault(); show(tIdx - 1, true); }
+      if (e.key === "ArrowRight") { e.preventDefault(); show(tIdx + 1, true); }
+    });
+
+    /* 鼠标视差：三层景深随光标缓动 */
+    if (!reduced) {
+      var tLayers = Array.prototype.slice.call(tourStage.querySelectorAll(".tl"));
+      var ptx = 0, pty = 0, pcx = 0, pcy = 0, pRaf = null;
+      function pTick() {
+        pcx += (ptx - pcx) * 0.07;
+        pcy += (pty - pcy) * 0.07;
+        tLayers.forEach(function (l) {
+          var d = parseFloat(l.getAttribute("data-depth")) || 0;
+          l.style.transform =
+            "translate3d(" + (-pcx * d).toFixed(2) + "px," + (-pcy * d * 0.6).toFixed(2) + "px,0)";
+        });
+        if (Math.abs(pcx - ptx) > 0.001 || Math.abs(pcy - pty) > 0.001) {
+          pRaf = requestAnimationFrame(pTick);
+        } else { pRaf = null; }
+      }
+      function pPoke() { if (pRaf === null) pRaf = requestAnimationFrame(pTick); }
+      tourStage.addEventListener("mousemove", function (e) {
+        var r = tourStage.getBoundingClientRect();
+        ptx = (e.clientX - r.left) / r.width - 0.5;
+        pty = (e.clientY - r.top) / r.height - 0.5;
+        pPoke();
+      });
+      tourStage.addEventListener("mouseleave", function () {
+        ptx = 0; pty = 0; pPoke();
+      });
+    }
+
+    show(0, false);
+    setAuto(!reduced);
+  }
 })();

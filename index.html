@@ -34,6 +34,7 @@
       <a href="#landmarks">红色地标</a>
       <a href="#stories">红色故事</a>
       <a href="#videos">红色影像</a>
+      <a href="#tour">云游井冈山</a>
       <a href="#quiz">星火问答</a>
     </nav>
     <button class="nav-toggle" id="navToggle" aria-label="打开菜单" aria-expanded="false" aria-controls="navMenu">
@@ -402,11 +403,140 @@
   </div>
 </section>
 
+<!-- ========== 云游井冈山 ========== -->
+<section class="sec sec-tint" id="tour">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="seal-num" aria-hidden="true">柒</span>
+      <div>
+        <p class="sec-kicker">云游井冈山</p>
+        <h2>晨昏四时，<span class="em-red">云上井冈</span></h2>
+        <p class="sec-desc">六处胜景实景照片，从主峰云海走到峡谷飞瀑。移动鼠标，画面随视角缓缓流转；点击下方站点，或开启自动云游，足不出户饱览五百里井冈。</p>
+      </div>
+    </div>
+
+    <div class="tour-stage reveal" id="tourStage" tabindex="0" aria-label="云游井冈山实景照片长卷：左右方向键或点击站点切换景点，移动鼠标可体验景深视差">
+      <!-- 场景一 · 五指峰 -->
+      <div class="tour-scene active" aria-hidden="true"
+        data-num="壹" data-kicker="井冈主峰 · 罗霄中段" data-name="五指峰" data-sub="主峰云海 · 百元取景地"
+        data-line="久有凌云志，重上井冈山" data-by="—— 毛泽东《水调歌头·重上井冈山》"
+        data-credit="图：N509FZ · Wikimedia Commons · CC BY-SA 4.0"
+        data-desc="主峰海拔1586米，五峰并列状若巨掌。1990年版百元人民币背面图案正是取景于此，井冈山因此被称为“最值钱”的一座山——层峦叠翠之间，五百里井冈从这里铺展。">
+        <figure class="tl" data-depth="14">
+          <img src="img/tour/wuzhifeng.jpg" alt="五指峰主峰群山实景" loading="eager">
+        </figure>
+      </div>
+
+      <!-- 场景二 · 黄洋界 -->
+      <div class="tour-scene" aria-hidden="true"
+        data-num="贰" data-kicker="五大哨口 · 保卫战旧址" data-name="黄洋界" data-sub="哨口丰碑 · 以少胜多"
+        data-line="黄洋界上炮声隆，报道敌军宵遁" data-by="—— 毛泽东《西江月·井冈山》"
+        data-credit="图：Liuxingy · Wikimedia Commons · CC BY-SA 4.0"
+        data-desc="海拔1343米，五大哨口之首。1928年8月，红军凭险击退敌军四个团，取得黄洋界保卫战大捷。哨口纪念碑立于青松翠柏之间——“过了黄洋界，险处不须看”。">
+        <figure class="tl" data-depth="14">
+          <img src="img/tour/huangyangjie.jpg" alt="黄洋界保卫战纪念碑实景" loading="lazy">
+        </figure>
+      </div>
+
+      <!-- 场景三 · 龙潭 -->
+      <div class="tour-scene" aria-hidden="true"
+        data-num="叁" data-kicker="幽谷深涧 · 峡谷林海" data-name="龙潭" data-sub="五潭十八瀑 · 揽云亭"
+        data-line="五潭十八瀑，幽谷藏飞泉" data-by=""
+        data-credit="图：Liuxingy · Wikimedia Commons · CC BY-SA 4.0"
+        data-desc="五神河水在峡谷中五级飞跌，成就“五潭十八瀑”的奇观。山腰揽云亭静立林海之上，凭栏俯瞰，幽谷深涧、满目苍翠，是井冈山最清凉的一片绿意。">
+        <figure class="tl" data-depth="16">
+          <img src="img/tour/longtan.jpg" alt="龙潭峡谷林海与揽云亭实景" loading="lazy">
+        </figure>
+      </div>
+
+      <!-- 场景四 · 水口彩虹瀑 -->
+      <div class="tour-scene" aria-hidden="true"
+        data-num="肆" data-kicker="飞瀑垂虹 · 水口奇观" data-name="水口彩虹瀑" data-sub="白练垂空 · 水雾生虹"
+        data-line="飞流直下，水雾生虹" data-by=""
+        data-credit="图：luchangjiang · Wikimedia Commons · CC BY-SA 3.0"
+        data-desc="水口瀑布从崖口倾泻而下，晴日水雾弥散，阳光下常悬起一道彩虹，人称“彩虹瀑”，是井冈山最灵秀的一处飞瀑。">
+        <figure class="tl" data-depth="16">
+          <img src="img/tour/shuikou.jpg" alt="水口彩虹瀑实景，水雾中可见彩虹" loading="lazy" style="object-position:50% 68%">
+        </figure>
+      </div>
+
+      <!-- 场景五 · 大井旧居 -->
+      <div class="tour-scene" aria-hidden="true"
+        data-num="伍" data-kicker="斜阳草甸 · 红色名村" data-name="大井旧居" data-sub="白墙黛瓦 · 读书石畔"
+        data-line="读书石畔，常青树前" data-by=""
+        data-credit="图：Liuxingy · Wikimedia Commons · CC BY-SA 4.0"
+        data-desc="大井村毛泽东同志旧居，白墙黛瓦静卧于青山草坪之间。屋前“读书石”与常青树依旧，当年毛泽东常在此读书看报、眺望群山。">
+        <figure class="tl" data-depth="14">
+          <img src="img/tour/dajing.jpg" alt="大井毛泽东同志旧居实景，阳光穿过云层" loading="lazy">
+        </figure>
+      </div>
+
+      <!-- 场景六 · 八角楼 -->
+      <div class="tour-scene" aria-hidden="true"
+        data-num="陆" data-kicker="茅坪夜话 · 革命旧址" data-name="八角楼的灯光" data-sub="一根灯芯 · 洞见中国"
+        data-line="一根灯芯的微光，照亮中国革命的前路" data-by=""
+        data-credit="图：N509FZ · Wikimedia Commons · CC BY-SA 4.0"
+        data-desc="茅坪村八角楼，因楼上的八边形天窗得名。毛泽东借着一根灯芯的青油灯彻夜写作，两篇光辉著作从这里诞生，如星火照亮漫漫长夜。">
+        <figure class="tl" data-depth="16">
+          <img src="img/tour/bajiaolou.jpg" alt="茅坪八角楼毛泽东同志旧居院落实景" loading="lazy">
+        </figure>
+      </div>
+
+      <div class="tour-shade" aria-hidden="true"></div>
+
+      <div class="tour-badge" id="tourBadge">云游 · 第壹站</div>
+      <div class="tour-info" id="tourInfo" aria-live="polite">
+        <p class="ti-kicker">井冈主峰 · 罗霄中段</p>
+        <h3 class="ti-name">五指峰 <em>主峰云海 · 百元取景地</em></h3>
+        <p class="ti-line">「 久有凌云志，重上井冈山 」<small>—— 毛泽东《水调歌头·重上井冈山》</small></p>
+        <p class="ti-desc">主峰海拔1586米，五峰并列状若巨掌。1990年版百元人民币背面图案正是取景于此，井冈山因此被称为“最值钱”的一座山——层峦叠翠之间，五百里井冈从这里铺展。</p>
+        <p class="ti-credit">图：N509FZ · Wikimedia Commons · CC BY-SA 4.0</p>
+      </div>
+
+      <button class="tour-arrow prev" id="tourPrev" aria-label="上一处景点">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+      </button>
+      <button class="tour-arrow next" id="tourNext" aria-label="下一处景点">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+      </button>
+      <button class="tour-auto" id="tourAuto" aria-pressed="true" title="暂停自动云游"></button>
+    </div>
+
+    <div class="tour-stops reveal" id="tourStops" aria-label="云游站点列表">
+      <button class="tour-stop active" aria-label="第一站：五指峰">
+        <span class="ts-num" aria-hidden="true">壹</span>
+        <span class="ts-body"><strong>五指峰</strong><em>主峰云海</em></span>
+      </button>
+      <button class="tour-stop" aria-label="第二站：黄洋界">
+        <span class="ts-num" aria-hidden="true">贰</span>
+        <span class="ts-body"><strong>黄洋界</strong><em>哨口丰碑</em></span>
+      </button>
+      <button class="tour-stop" aria-label="第三站：龙潭">
+        <span class="ts-num" aria-hidden="true">叁</span>
+        <span class="ts-body"><strong>龙潭</strong><em>幽谷深涧</em></span>
+      </button>
+      <button class="tour-stop" aria-label="第四站：水口彩虹瀑">
+        <span class="ts-num" aria-hidden="true">肆</span>
+        <span class="ts-body"><strong>水口</strong><em>彩虹飞瀑</em></span>
+      </button>
+      <button class="tour-stop" aria-label="第五站：大井旧居">
+        <span class="ts-num" aria-hidden="true">伍</span>
+        <span class="ts-body"><strong>大井</strong><em>旧居斜阳</em></span>
+      </button>
+      <button class="tour-stop" aria-label="第六站：八角楼">
+        <span class="ts-num" aria-hidden="true">陆</span>
+        <span class="ts-body"><strong>八角楼</strong><em>灯光如豆</em></span>
+      </button>
+    </div>
+    <p class="tour-note reveal">实景照片来自 Wikimedia Commons（CC 授权，作者见各站左下角） · 鼠标移动体验景深视差 · 键盘 ← → 切换站点</p>
+  </div>
+</section>
+
 <!-- ========== 星火问答 ========== -->
 <section class="sec sec-light" id="quiz">
   <div class="wrap">
     <div class="sec-head reveal">
-      <span class="seal-num" aria-hidden="true">柒</span>
+      <span class="seal-num" aria-hidden="true">捌</span>
       <div>
         <p class="sec-kicker">星火问答</p>
         <h2>测一测，<span class="em-red">你有多懂井冈山</span></h2>
